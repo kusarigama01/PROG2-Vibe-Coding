@@ -14,6 +14,7 @@ Aucune dépendance JPA/Hibernate n'est utilisée. L'accès aux données est réa
 ```bash
 mvn spring-boot:run
 ```
+ou tout simplement Ctrl+F5 (raccourci pour play)
 
 ## Endpoints
 
