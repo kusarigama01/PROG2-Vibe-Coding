@@ -27,12 +27,12 @@ public class TransactionController {
         return transactionService.getTransactionsByAccountId(id);
     }
 
-    @PostMapping("/transaction")
+    @PostMapping("/transactions")
     public Transaction createTransaction(@RequestBody CreateTransactionRequestDto request) {
         return transactionService.createTransaction(request);
     }
 
-    @GetMapping("/account/{id}/balance")
+    @GetMapping("/accounts/{id}/balance")
     public BalanceResponseDto getAccountBalance(@PathVariable("id") String id) {
         return transactionService.getAccountBalance(id);
     }
